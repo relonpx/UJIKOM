@@ -1,0 +1,51 @@
+main .header{
+  font-size: .9rem;
+  text-align: left;
+  border-bottom: 2px dotted #6C63FF;
+  padding: .4rem 0;
+}
+
+#info{
+  font-size: .8rem;
+  margin: 1rem 0;
+  padding: 3rem;
+  border-radius: .8rem;
+  border: 1px solid black;
+}
+
+.totalWrap{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .8rem;
+  border: 1px solid black;
+}
+
+.totalWrap p{
+  font-size: .8rem;
+}
+
+.totalWrap h2{
+  color: #6b63ff;
+}
+
+.payment{
+  background: #8781ff;
+  color: white;
+  padding: 1rem;
+  border-radius: .4rem; margin: 1rem 0;
+}
+
+.paymentDetail{
+  width: 50%;
+  text-align: right;
+  font-size: .8rem;
+}
+
+.bayar{
+  width: 100%;
+  background: #6C63FF;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: .8rem;
+}

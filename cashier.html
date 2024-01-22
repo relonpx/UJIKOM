@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/order.css">
+  <link rel="stylesheet" href="style/payment.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container jc-sb">
+    <header class="nav">
+      <img src="assets/undraw_Yacht_re_kkai.png" alt="">
+      <h1>Molten</h1>
+    </header>
+    <main>
+      <div class="totalWrap">
+        <p>Total Pembayaran Sebesar</p>
+        <h2 id="total"></h2>
+      </div>
+      <div class="paymentStatus">
+        <p style="font-size: 8rem;">&#10004;</p>
+        <h3>Silahkan bayar di kasir</h3>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Molten Resto</p>
+    </footer>
+  </div>
+
+  <script>
+    const formatUang = (rupiah) => {
+      return rupiah.toLocaleString("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+      });
+    };
+
+    let data = localStorage.getItem('total')
+    let total = document.getElementById('total').innerHTML = formatUang(parseInt(data))
+  </script>
+</body>
+</html>

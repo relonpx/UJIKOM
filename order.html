@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/order.css">
+  <title>Order</title>
+</head>
+<body>
+  <div class="container jc-sb">
+    <header class="nav">
+      <img src="assets/undraw_Yacht_re_kkai.png" alt="">
+      <h1>Molten</h1>
+    </header>
+    <main>
+      <h1 class="header">Info Pemesanan</h1>
+      <p id="info"></p>
+      <div class="totalWrap">
+        <p>Total Pembayaran Sebesar</p>
+        <h2 id="total">Rp. 100.000</h2>
+      </div>
+      <h1 class="header">Metode Pembayaran</h1>
+      <div class="payment flex ai-center jc-sb">
+        <div class="">
+          <input type="radio" name="payment" id="restoPay">
+          <label for="restoPay" style="font-size: 1rem; margin-left: .6rem;">Resto Pay</label>
+        </div>
+        <div class="paymentDetail">
+          <p>Saldo Resto Pay</p>
+          <p id="saldo"></p>
+        </div>
+      </div>
+      <div class="payment flex ai-center jc-sb">
+        <div class="" style="color: white;">
+          <input type="radio" name="payment" id="cash">
+          <label for="cash" style="font-size: 1rem; margin-left: .6rem;">Cash</label>
+        </div>
+        <div class="paymentDetail">
+          <p>Siapkan uang sesuai nominal pembayaran</p>
+        </div>
+      </div>
+      <button onclick="bayar()" class="bayar">Bayar</button>
+    </main>
+    <footer>
+      <p>&copy; 2023 Molten Resto</p>
+    </footer>
+  </div>
+  <script src="script/order.js"></script>
+</body>
+</html>
